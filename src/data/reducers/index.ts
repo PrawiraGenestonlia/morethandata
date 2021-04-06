@@ -1,9 +1,10 @@
 import { combineReducers } from 'redux';
 import { persistReducer } from 'redux-persist';
-// import localStorage from 'redux-persist/lib/storage';
+import localStorage from 'redux-persist/lib/storage';
 import sessionStorage from 'redux-persist/lib/storage/session';
 
 import { templateReducer, TemplateState } from './_template';
+import { authReducer, AuthState } from './auth';
 
 type withPersistance = {
   _persist: {
@@ -13,9 +14,11 @@ type withPersistance = {
 }
 
 export type REDUCER_TYPES = {
-  template: TemplateState & withPersistance
+  template: TemplateState & withPersistance,
+  auth: AuthState & withPersistance
 }
 
 export default combineReducers({
-  template: persistReducer({ key: 'template', storage: sessionStorage }, templateReducer),
+  template: persistReducer({ key: 'template', storage: localStorage }, templateReducer),
+  auth: persistReducer({ key: 'auth', storage: sessionStorage }, authReducer),
 })

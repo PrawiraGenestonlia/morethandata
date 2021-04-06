@@ -7,9 +7,7 @@ export interface TemplateState {
   data: Object
 }
 
-const initialState = {} as TemplateState;
-
-export const templateReducer = (state = initialState, action: AnyAction) => {
+export const templateReducer = (state = {} as TemplateState, action: AnyAction) => {
   switch (action.type) {
     case _templateActions.TYPES.ACTION_REQUEST:
       return { ...state, fetching: true, error: "" }

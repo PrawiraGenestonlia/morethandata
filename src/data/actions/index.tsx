@@ -1,1 +1,0 @@
-export { actions as _templateActions } from './_template';

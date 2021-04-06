@@ -11,7 +11,8 @@ module.exports = {
   },
   webpack: {
     alias: {
-      "@components": path.resolve(__dirname, 'src/components/')
+      "@components": path.resolve(__dirname, 'src/components/'),
+      "@react-redux-helper": path.resolve(__dirname, 'src/utils/react-redux-helper')
     }
   }
 }

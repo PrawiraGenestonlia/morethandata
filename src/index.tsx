@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import RouterApp from './router';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import configureStore from './data/store';
@@ -13,7 +13,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={redux.store}>
       <PersistGate loading={null} persistor={redux.persistor}>
-        <App />
+        <RouterApp />
       </PersistGate>
     </Provider>
   </React.StrictMode>,
