@@ -5,6 +5,9 @@
       "@components/*": [
         "components/*"
       ],
+      "@constants/*": [
+        "constants/*"
+      ],
       "@react-redux-helper": [
         "utils/react-redux-helper"
       ]

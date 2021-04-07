@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import RouterApp from './router';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import configureStore from './data/store';
 import { PersistGate } from 'redux-persist/integration/react';
+import './css/index.css';
+import './css/tailwind.css';
 
 const redux = configureStore();
 
