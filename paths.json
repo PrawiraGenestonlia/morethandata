@@ -8,6 +8,9 @@
       "@constants/*": [
         "constants/*"
       ],
+      "@assets/*": [
+        "assets/*"
+      ],
       "@react-redux-helper": [
         "utils/react-redux-helper"
       ]
