@@ -1,5 +1,10 @@
-import HomePage from './homePage';
+import GeneralLanding from './general/landing';
+import AppHome from './viz/appHome';
 
-export const page = {
-  HomePage
+export const generalPage = {
+  GeneralLanding
+}
+
+export const vizPage = {
+  AppHome
 }

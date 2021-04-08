@@ -5,7 +5,10 @@ module.exports = {
     extend: {
       colors: {
         customNavy: '#282c34'
-      }
+      },
+      backgroundImage: theme => ({
+        'mtd-logo': "url('LogoOnly.png')"
+      })
     },
   },
   variants: {

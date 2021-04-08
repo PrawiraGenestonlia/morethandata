@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 // import { PrivateRoute } from './roleRoute';
-import { page } from '../pages';
+import { generalPage, vizPage } from '../pages';
 
 const RouterApp = () => {
 
   const UserRoutes = () => (
     <Switch>
-      <Route exact path="/app/home" component={page.HomePage} />
+      <Route exact path="/app/home" component={vizPage.AppHome} />
       <Route path="/" component={() => <Redirect to="/app/home" />} />
     </Switch>
   )
@@ -22,9 +22,10 @@ const RouterApp = () => {
     <Router basename="/">
       <Switch>
         {/* <Route exact path="/login" component={page.HomePage} /> */}
+        <Route exact path="/" component={generalPage.GeneralLanding} />
         <Route path="/app"><UserRoutes /></Route>
         {/* <Route path="/admin"><PrivateRoutes /></Route> */}
-        <Route path="/" component={() => <Redirect to="/app/home" />} />
+        <Route path="/" component={() => <Redirect to="/" />} />
       </Switch>
     </Router>
   )
