@@ -2,11 +2,18 @@ import Layout from '@components/layout';
 import ThemeButton from '@components/themeButton';
 import Logo from '@assets/MoreThanDataLogo/logo.svg';
 import { Link } from 'react-router-dom';
+import { useTheme } from '@components/themeButton';
+import FSLight from '@assets/FullStack/FSLight.png';
+import FSDark from '@assets/FullStack/FSDark.png';
+import { useRef } from 'react';
+
 interface IComponentProps {
 
 }
 
 const Component = (props: IComponentProps) => {
+  const [theme,] = useTheme();
+  const aboutRef = useRef<HTMLDivElement | null>(null);
 
   return (
     <Layout>
@@ -20,10 +27,10 @@ const Component = (props: IComponentProps) => {
             <ThemeButton />
           </div>
         </div>
-        <div className="mt-24 text-2xl select-none flex flex-row items-center"><img className="w-10 h-10 mr-3" src={Logo} alt="more than data" />morethandata</div>
+        <div className="mt-24 text-2xl select-none flex flex-row items-center"><img className="w-10 h-10 mr-3" src={Logo} alt="more than data" />more<span className="text-mtd-200">than</span>data</div>
         <div className="mt-4 text-2xl sm:text-6xl lg:text-7xl font-bold">Bring life to data through unique visualisation.</div>
         <div className="mt-16 flex flex-row justify-center">
-          <div className="animate-bounce rounded-full border-2 p-5 border-gray-800 dark:border-gray-200">
+          <div className="cursor-help animate-bounce rounded-full border-2 p-5 border-gray-800 dark:border-gray-200" onClick={() => aboutRef.current?.scrollIntoView({ behavior: 'smooth' })}>
             <svg className=" w-6 h-6 text-amber-900 justify-center" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
               <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
             </svg>
@@ -35,7 +42,14 @@ const Component = (props: IComponentProps) => {
         </div>
         <div>Quotes</div>
         <div>New Section - About Me</div>
-        <div>Education, Interest (TechStack), Software Developer in World Class Financial Institution</div>
+
+        <div className="flex flex-row w-full justify-center" ref={aboutRef}>
+          <div className="text-center border-b-2 border-gray-300 dark:border-gray-600 p-4 text-lg sm:text-2xl lg:text-3xl font-bold" style={{ width: '50%' }}>About Me</div>
+        </div>
+        <div className="mt-4">I live in Singapore and work as a full-stack developer in fintech industry</div>
+        <div className="mt-4 w-full flex justify-center"><img className="w-full" style={{ maxWidth: '50rem' }} src={theme === 'dark' ? FSDark : FSLight} alt="full-stack dev" /></div>
+
+        <div className="mt-4">Education, Interest (TechStack), Software Developer in World Class Financial Institution</div>
         <div>Footer in Layout</div>
 
       </div>
