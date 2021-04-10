@@ -47,7 +47,7 @@ const Component = (props: IComponentProps) => {
           <div className="text-center border-b-2 border-gray-300 dark:border-gray-600 p-4 text-lg sm:text-2xl lg:text-3xl font-bold" style={{ width: '50%' }}>About Me</div>
         </div>
         <div className="mt-4">I live in Singapore and work as a full-stack developer in fintech industry</div>
-        <div className="mt-4 w-full flex justify-center"><img className="w-full" style={{ maxWidth: '50rem' }} src={theme === 'dark' ? FSDark : FSLight} alt="full-stack dev" /></div>
+        <div className="mt-4 w-full flex justify-center"><img className="w-full h-full object-contain" style={{ maxWidth: '50rem' }} src={theme === 'dark' ? FSDark : FSLight} alt="full-stack dev" /></div>
 
         <div className="mt-4">Education, Interest (TechStack), Software Developer in World Class Financial Institution</div>
         <div>Footer in Layout</div>
