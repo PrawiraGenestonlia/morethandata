@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import FSLight from '@assets/FullStack/FSLight.png';
 import FSDark from '@assets/FullStack/FSDark.png';
 import WiraAvatar from '@assets/Personal/wira.jpeg';
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 interface IComponentProps {
 
@@ -14,6 +14,10 @@ interface IComponentProps {
 const Component = (props: IComponentProps) => {
   const [theme,] = useTheme();
   const aboutRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    console.log(aboutRef)
+  }, [aboutRef])
 
   return (
     <Layout fade padding flex footer>
@@ -47,7 +51,7 @@ const Component = (props: IComponentProps) => {
 
 
       {/* section */}
-      <div className="py-12 " ref={aboutRef}>
+      <div className="py-12 ">
         <div className="max-w-7xl mx-auto lg:px-8">
           <div className="lg:text-center">
             <h2 className="text-base text-mtd-300 dark:text-mtd-200 font-semibold tracking-wide uppercase">WHY MORETHANDATA?</h2>
@@ -64,7 +68,7 @@ const Component = (props: IComponentProps) => {
       </div>
 
       {/* section */}
-      <div className="py-12" ref={aboutRef}>
+      <div className="py-12" ref={(ref) => console.log(ref)}>
         <div className="max-w-9xl mx-auto lg:px-8">
           <div className="lg:text-center">
             <h2 className="text-base text-mtd-300 dark:text-mtd-200 font-semibold tracking-wide uppercase">ABOUT ME</h2>
