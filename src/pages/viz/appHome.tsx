@@ -1,12 +1,13 @@
+import Layout from '@components/layout';
 interface IComponentProps {
 
 }
 
 const Component = (props: IComponentProps) => {
   return (
-    <div className="w-full h-full">
-      App Home
-    </div>
+    <Layout padding header footer>
+      <div>APP HOME</div>
+    </Layout>
   )
 }
 

@@ -42,7 +42,7 @@ const Component = (props: IComponentProps) => {
       {/* section */}
       <div className="relative h-full">
         <div className="w-full h-full absolute t-0 bg-mtd-logo bg-no-repeat bg-right bg-contain bg-opacity-25 opacity-10">&#8203;</div>
-        <div>Cool Visualisation Animation</div>
+        <div className="mt-6">[TODO-ADD] Cool Visualisation Animation</div>
       </div>
 
 
@@ -58,6 +58,7 @@ const Component = (props: IComponentProps) => {
               Data visualisation has been outdated due to business use case. It has always been limited to common charts.
               more<span className="text-mtd-200">than</span>data would like to bring a fresh perspective of what data should look like for non-business use-case.
             </p>
+            <div className="mt-6">[TODO-ADD] Viz Graphics</div>
           </div>
         </div>
       </div>

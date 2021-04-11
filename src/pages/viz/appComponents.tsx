@@ -13,11 +13,13 @@ const Component = (props: IComponentProps) => {
   const Documentation = (): JSX.Element => {
     switch (type) {
       case 'button': return <ButtonDoc />
-      default: return <></>
+      default: return <div>
+        All components
+      </div>
     }
   }
   return (
-    <Layout padding footer>
+    <Layout padding header footer>
       <Documentation />
     </Layout>
   )
