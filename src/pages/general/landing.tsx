@@ -41,21 +41,12 @@ const Component = (props: IComponentProps) => {
       </div>
 
       {/* section */}
-      <div className="relative h-full">
-        <div className="w-full h-full absolute t-0 bg-mtd-logo bg-no-repeat bg-right bg-contain bg-opacity-25 opacity-10">&#8203;</div>
-        <div className="mt-6">[TODO-ADD] Cool Visualisation Animation
-        
-        </div>
-      </div>
-
-
-      {/* section */}
       <div className="py-12 ">
         <div className="max-w-9xl mx-auto lg:px-8">
           <div className="lg:text-center">
             <h2 className="text-base text-mtd-300 dark:text-mtd-200 font-semibold tracking-wide uppercase">WHY MORETHANDATA?</h2>
             <p className="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 dark:text-gray-200 sm:text-4xl">
-              Unique Perspective to bring data alive
+              Unique perspective to bring data alive
               </p>
             <p className="mt-4 max-w-5xl text-xl text-gray-500 dark:text-gray-300 lg:mx-auto">
               Data visualisation has been outdated due to business use case. It has always been limited to common charts.
@@ -67,81 +58,52 @@ const Component = (props: IComponentProps) => {
       </div>
 
       {/* section */}
+      <div className="py-12 ">
+        <div className="max-w-9xl mx-auto lg:px-8">
+          <div className="lg:text-center">
+            <h2 className="text-base text-mtd-300 dark:text-mtd-200 font-semibold tracking-wide uppercase">FEATURE</h2>
+            <p className="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 dark:text-gray-200 sm:text-4xl">
+              Built with modern tech-stack
+              </p>
+            <p className="mt-4 max-w-5xl text-xl text-gray-500 dark:text-gray-300 lg:mx-auto">
+              This site serves more than just data-visualisation. It is open-source, allowing everyone to learn and reference the code-base. This site is built on React (UI), Tailwindcss (Utility-CSS), and d3 (visualisation). Some may claim that the tech-stack stack is overkill, but really... it has very decent boilerplate!
+            </p>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 ">
+              <div className="mt-8 flex flex-col items-center justify-center">
+                <div className="my-3 lg:my-12"><ThemeButton /></div>
+                <div className="mt-2 text-xl font-bold">Dark-Mode Enabled</div>
+              </div>
+              <div className="mt-8 flex flex-col items-center justify-center">
+                <svg className="w-32 h-32 fill-current text-gray-700 dark:text-mtd-300 transition-colors duration-500" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><g><path d="M64,400H40a8,8,0,0,0,0,16H64a8,8,0,0,0,0-16Z" /><path d="M96,400H88a8,8,0,0,0,0,16h8a8,8,0,0,0,0-16Z" /><path d="M472,168H456V104a32.042,32.042,0,0,0-32-32H88a32.036,32.036,0,0,0-32,32V248H40A32.036,32.036,0,0,0,8,280V408a32.036,32.036,0,0,0,32,32h80a32.042,32.042,0,0,0,32-32V384h69.75l-4,16H192a8,8,0,0,0-8,8v24a8,8,0,0,0,8,8H472a32.042,32.042,0,0,0,32-32V200A32.042,32.042,0,0,0,472,168ZM136,408a16.021,16.021,0,0,1-16,16H40a16.021,16.021,0,0,1-16-16V280a16.021,16.021,0,0,1,16-16H50.23l6.18,18.53A8,8,0,0,0,64,288H96a8,8,0,0,0,7.59-5.47L109.77,264H120a16.021,16.021,0,0,1,16,16ZM67.1,264H92.9l-2.67,8H69.77ZM152,368V344H296v24Zm144,16v16h-1.75l-4-16Zm-18.25,16h-43.5l4-16h35.5ZM200,424v-8h97.01a31.971,31.971,0,0,0,3.3,8Zm96-224V328H152V280a32.042,32.042,0,0,0-32-32H72V104A16.021,16.021,0,0,1,88,88H424a16.021,16.021,0,0,1,16,16v64H328A32.042,32.042,0,0,0,296,200ZM488,408a16.021,16.021,0,0,1-16,16H328a16.021,16.021,0,0,1-16-16V200a16.021,16.021,0,0,1,16-16H472a16.021,16.021,0,0,1,16,16Z" /><path d="M472,192H328a8,8,0,0,0-8,8V384a8,8,0,0,0,8,8H472a8,8,0,0,0,8-8V200A8,8,0,0,0,472,192Zm-8,184H336V208H464Z" /><circle cx="392" cy="408" r="8" /></g></svg>
+                <div className="mt-2 text-xl font-bold">Responsive</div>
+
+              </div>
+              <div className="mt-8 flex flex-col items-center justify-center">
+                <svg className="w-32 h-32 fill-current text-gray-700 dark:text-mtd-300 transition-colors duration-500" height="512" viewBox="0 0 64 64" width="512" xmlns="http://www.w3.org/2000/svg"><g id="Database-cloud-laptop-computer-smartphone"><path d="m41 21h-18a1 1 0 0 0 -1 1v24a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1v-24a1 1 0 0 0 -1-1zm-1 24h-16v-6h16zm0-8h-16v-6h16zm0-8h-16v-6h16z" /><path d="m59 2h-14a3.009 3.009 0 0 0 -3 3v8a3.009 3.009 0 0 0 3 3h4v2h-2v2h10v-2h-2v-2h4a3.009 3.009 0 0 0 3-3v-8a3.009 3.009 0 0 0 -3-3zm-6 16h-2v-2h2zm7-5a1 1 0 0 1 -1 1h-14a1 1 0 0 1 -1-1v-1h16zm0-3h-16v-5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1z" /><path d="m61 56v-7a3.009 3.009 0 0 0 -3-3h-12a3.009 3.009 0 0 0 -3 3v7a1 1 0 0 0 -1 1v2a3.009 3.009 0 0 0 3 3h14a3.009 3.009 0 0 0 3-3v-2a1 1 0 0 0 -1-1zm-16-7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7h-14zm15 10a1 1 0 0 1 -1 1h-14a1 1 0 0 1 -1-1v-1h16z" /><path d="m17 48h-1v-1a3.009 3.009 0 0 0 -3-3h-8a3.009 3.009 0 0 0 -3 3v12a3.009 3.009 0 0 0 3 3h12a3.009 3.009 0 0 0 3-3v-8a3.009 3.009 0 0 0 -3-3zm-6.82 12h-5.18a1 1 0 0 1 -1-1v-12a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v1h-1a3.009 3.009 0 0 0 -3 3v8a3 3 0 0 0 .18 1zm7.82-1a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1-1v-8a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1z" /><path d="m23.92 8.08a4.985 4.985 0 0 0 -6.3-3.88 5.916 5.916 0 0 0 -4.62-2.2 6.024 6.024 0 0 0 -5.67 4.04 6 6 0 0 0 .67 11.96h15a5 5 0 0 0 .92-9.92zm-.92 7.92h-15a4.006 4.006 0 0 1 -.09-8.01.777.777 0 0 0 .16.02 1.009 1.009 0 0 0 1.01-.8 3.99 3.99 0 0 1 7.33-1.28.981.981 0 0 0 1.29.38 2.977 2.977 0 0 1 4.3 2.69 1 1 0 0 0 1 1 3 3 0 0 1 0 6z" /><path d="m26 25h2v2h-2z" /><path d="m31 25h2v2h-2z" /><path d="m36 25h2v2h-2z" /><path d="m26 33h2v2h-2z" /><path d="m31 33h2v2h-2z" /><path d="m36 33h2v2h-2z" /><path d="m26 41h2v2h-2z" /><path d="m31 41h2v2h-2z" /><path d="m36 41h2v2h-2z" /><path d="m53 29v-7h-2v6h-7v2h8a1 1 0 0 0 1-1z" /><path d="m44 36h7v8h2v-9a1 1 0 0 0 -1-1h-8z" /><path d="m13 20h-2v9a1 1 0 0 0 1 1h8v-2h-7z" /><path d="m11 35v7h2v-6h7v-2h-8a1 1 0 0 0 -1 1z" /></g></svg>                <div className="mt-2 text-xl font-bold">Data-Driven</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* section */}
       <div className="py-12" ref={aboutRef}>
         <div className="max-w-9xl mx-auto lg:px-8">
           <div className="lg:text-center">
             <h2 className="text-base text-mtd-300 dark:text-mtd-200 font-semibold tracking-wide uppercase">ABOUT ME</h2>
             <p className="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 dark:text-gray-200 sm:text-4xl">
               Prawira Genestonlia
-              </p>
-            <p className="mt-4 max-w-5xl text-xl text-gray-500 dark:text-gray-300 lg:mx-auto">I am a technology enthusiast, currently working as a full-stack developer in TechFin Industry. </p>
+            </p>
+            <p className="mt-4 max-w-5xl text-xl text-gray-500 dark:text-gray-300 lg:mx-auto">
+              I am <span className="font-bold">Wira</span>, a current full-stack software developer in TechFin industry.
+              Being a trained Engineer and Economist, I am putting all the data-analysis knowledge into a single domain and visualise it.
+              I hope to be able to share interesting finding with everyone.
+            </p>
           </div>
-
           <div className="mt-8 w-full flex justify-center"><img className="w-48 h-full object-contain max-w-xs border-2  rounded-full dark:border-mtd-400 border-gray-800 shadow-2xl" src={WiraAvatar} alt="wira" /></div>
           <div className="w-full flex justify-center"><img className="w-full h-full object-contain max-w-3xl" src={theme === 'dark' ? FSDark : FSLight} alt="full-stack dev" /></div>
-
-
-          {/* <div className="mt-10">
-              <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
-                <div className="relative">
-                  <dt>
-                    <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                      <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-                      </svg>
-                    </div>
-                    <p className="ml-16 text-lg leading-6 font-medium text-gray-900">Competitive exchange rates</p>
-                  </dt>
-                  <dd className="mt-2 ml-16 text-base text-gray-500">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
-                  </dd>
-                </div>
-
-                <div className="relative">
-                  <dt>
-                    <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                      <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
-                      </svg>
-                    </div>
-                    <p className="ml-16 text-lg leading-6 font-medium text-gray-900">No hidden fees</p>
-                  </dt>
-                  <dd className="mt-2 ml-16 text-base text-gray-500">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
-                  </dd>
-                </div>
-
-                <div className="relative">
-                  <dt>
-                    <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                      <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                      </svg>
-                    </div>
-                    <p className="ml-16 text-lg leading-6 font-medium text-gray-900">Transfers are instant</p>
-                  </dt>
-                  <dd className="mt-2 ml-16 text-base text-gray-500">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
-                  </dd>
-                </div>
-
-                <div className="relative">
-                  <dt>
-                    <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                      <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
-                      </svg>
-                    </div>
-                    <p className="ml-16 text-lg leading-6 font-medium text-gray-900">Mobile notifications</p>
-                  </dt>
-                  <dd className="mt-2 ml-16 text-base text-gray-500">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
-                  </dd>
-                </div>
-              </dl>
-            </div> */}
-
         </div>
+
       </div>
     </Layout>
 
