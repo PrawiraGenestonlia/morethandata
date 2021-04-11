@@ -13,7 +13,7 @@ const Component = (props: IComponentProps) => {
 export const ButtonDoc = () => {
   return (
     <>
-      <div className="card bg-gray-200 dark:bg-navy-200 py-3 px-5 rounded-xl flex flex-col mb-5 transition-colors duration-500">
+      <div className="card bg-gray-200 dark:bg-navy-200 py-3 px-5 rounded-xl flex flex-col mb-5 text-black dark:text-white transition-colors duration-500">
         <div className="title text-xl font-medium">Filled</div>
         <div className="w-full py-3">
           <div className="inline-block mr-2 mt-2">
@@ -40,7 +40,7 @@ export const ButtonDoc = () => {
         </div>
       </div>
 
-      <div className="card bg-gray-200 dark:bg-navy-200 py-3 px-5 rounded-xl flex flex-col mb-5 transition-colors duration-500">
+      <div className="card bg-gray-200 dark:bg-navy-200 py-3 px-5 rounded-xl flex flex-col mb-5 text-black dark:text-white transition-colors duration-500">
         <div className="title text-xl font-medium">Border</div>
         <div className="w-full py-3">
           <div className="inline-block mr-2 mt-2">
@@ -64,7 +64,7 @@ export const ButtonDoc = () => {
         </div>
       </div>
 
-      <div className="card bg-gray-200 dark:bg-navy-200 py-3 px-5 rounded-xl flex flex-col mb-5 transition-colors duration-500">
+      <div className="card bg-gray-200 dark:bg-navy-200 py-3 px-5 rounded-xl flex flex-col mb-5 text-black dark:text-white transition-colors duration-500">
         <div className="title text-xl font-medium">Flat</div>
         <div className="w-full py-3">
           <div className="inline-block mr-2 mt-2">
@@ -91,7 +91,7 @@ export const ButtonDoc = () => {
         </div>
       </div>
 
-      <div className="card bg-gray-200 dark:bg-navy-200 py-3 px-5 rounded-xl flex flex-col mb-5 transition-colors duration-500">
+      <div className="card bg-gray-200 dark:bg-navy-200 py-3 px-5 rounded-xl flex flex-col mb-5 text-black dark:text-white transition-colors duration-500">
         <div className="title text-xl font-medium">Disabled</div>
         <div className="w-full py-3">
           <div className="inline-block mr-2 mt-2">
@@ -118,7 +118,7 @@ export const ButtonDoc = () => {
         </div>
       </div>
 
-      <div className="card bg-gray-200 dark:bg-navy-200 py-3 px-5 rounded-xl flex flex-col mb-5 transition-colors duration-500">
+      <div className="card bg-gray-200 dark:bg-navy-200 py-3 px-5 rounded-xl flex flex-col mb-5 text-black dark:text-white transition-colors duration-500">
         <div className="title text-xl font-medium">Gradient</div>
         <div className="w-full py-3">
           <div className="inline-block mr-2 mt-2">
@@ -145,7 +145,7 @@ export const ButtonDoc = () => {
         </div>
       </div>
 
-      <div className="card bg-gray-200 dark:bg-navy-200 py-3 px-5 rounded-xl flex flex-col mb-5 transition-colors duration-500">
+      <div className="card bg-gray-200 dark:bg-navy-200 py-3 px-5 rounded-xl flex flex-col mb-5 text-black dark:text-white transition-colors duration-500">
         <div className="title text-xl font-medium">Relief</div>
         <div className="w-full py-3">
           <div className="inline-block mr-2 mt-2">
@@ -172,7 +172,7 @@ export const ButtonDoc = () => {
         </div>
       </div>
 
-      <div className="card bg-gray-200 dark:bg-navy-200 py-3 px-5 rounded-xl flex flex-col mb-5 transition-colors duration-500">
+      <div className="card bg-gray-200 dark:bg-navy-200 py-3 px-5 rounded-xl flex flex-col mb-5 text-black dark:text-white transition-colors duration-500">
         <div className="title text-xl font-medium">Round</div>
         <div className="w-full py-3">
           <div className="inline-block mr-2 mt-2">
@@ -196,7 +196,7 @@ export const ButtonDoc = () => {
         </div>
       </div>
 
-      <div className="card bg-gray-200 dark:bg-navy-200 py-3 px-5 rounded-xl flex flex-col mb-5 transition-colors duration-500">
+      <div className="card bg-gray-200 dark:bg-navy-200 py-3 px-5 rounded-xl flex flex-col mb-5 text-black dark:text-white transition-colors duration-500">
         <div className="title text-xl font-medium">Icon</div>
         <div className="w-full py-3">
           <div className="inline-block mr-2 mt-2">
@@ -316,7 +316,7 @@ export const ButtonDoc = () => {
         </div>
       </div>
 
-      <div className="card bg-gray-200 dark:bg-navy-200 py-3 px-5 rounded-xl flex flex-col mb-5 transition-colors duration-500">
+      <div className="card bg-gray-200 dark:bg-navy-200 py-3 px-5 rounded-xl flex flex-col mb-5 text-black dark:text-white transition-colors duration-500">
         <div className="title text-xl font-medium">Icon only</div>
         <div className="w-full py-3">
           <div className="inline-block mr-2 mt-2">
@@ -371,7 +371,7 @@ export const ButtonDoc = () => {
         </div>
       </div>
 
-      <div className="card bg-gray-200 dark:bg-navy-200 py-3 px-5 rounded-xl flex flex-col mb-5 transition-colors duration-500">
+      <div className="card bg-gray-200 dark:bg-navy-200 py-3 px-5 rounded-xl flex flex-col mb-5 text-black dark:text-white transition-colors duration-500">
         <div className="title text-xl font-medium">Group</div>
         <div className="w-full py-3">
           <div className="flex mr-2" role="group">
@@ -394,7 +394,7 @@ export const ButtonDoc = () => {
         </div>
       </div>
 
-      <div className="card bg-gray-200 dark:bg-navy-200 py-3 px-5 rounded-xl flex flex-col mb-5 transition-colors duration-500">
+      <div className="card bg-gray-200 dark:bg-navy-200 py-3 px-5 rounded-xl flex flex-col mb-5 text-black dark:text-white transition-colors duration-500">
         <div className="title text-xl font-medium">Sizes</div>
         <div className="w-full py-3">
           <div className="inline-block mr-2 mt-2">
