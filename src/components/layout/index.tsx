@@ -62,12 +62,12 @@ const FOOTER_ITEMS: Array<IFOOTER_ITEM> = [
 
 const Component = (props: IComponentProps) => {
   return (
-    <div className="w-full h-full ">
+    <div className="w-full h-full">
       {/* HEADER */}
       {
         !!props.header &&
         <div className="max-w-9xl ml-auto mr-auto">
-          <div className="sticky top-0 z-50 bg-white dark:bg-navy-200 p-3 flex flex-row border-b-2 dark:border-gray-700 ">
+          <div className="sticky top-0 z-50 bg-white dark:bg-navy-200 p-3 flex flex-row border-b-2 dark:border-gray-700 transition-colors duration-500">
             <div className="flex-grow flex flex-row items-center justify-start">
               <Link to="/"><img className="w-10 h-10 mr-3" src={Logo} alt="more than data" /></Link>
             </div>
@@ -86,7 +86,7 @@ const Component = (props: IComponentProps) => {
 
       {/* CONTENT */}
       <div className={`w-full h-full text-base font-body 
-          text-black bg-white dark:text-white dark:bg-navy-100 
+          text-black bg-white dark:text-white dark:bg-navy-100 transition-colors duration-500
           ${props.padding && 'p-8 '}
           ${props.flex && 'flex flex-col flex-grow '}`}>
         <div className="max-w-9xl ml-auto mr-auto">
@@ -97,7 +97,7 @@ const Component = (props: IComponentProps) => {
       {/* FOOTER */}
       {
         !!props.footer &&
-        <div className="p-8 bg-gray-100 dark:bg-navy-200 ">
+        <div className="p-8 bg-gray-100 dark:bg-navy-200 transition-colors duration-500">
           <div className="max-w-9xl ml-auto mr-auto">
 
             {
