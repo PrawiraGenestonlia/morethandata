@@ -4,8 +4,9 @@ import Logo from '@assets/MoreThanDataLogo/logo.svg';
 import { Link } from 'react-router-dom';
 import FSLight from '@assets/FullStack/FSLight.png';
 import FSDark from '@assets/FullStack/FSDark.png';
+import Data from '@assets/FullStack/Data.png';
 import WiraAvatar from '@assets/Personal/wira.jpeg';
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 
 interface IComponentProps {
 
@@ -15,16 +16,12 @@ const Component = (props: IComponentProps) => {
   const [theme,] = useTheme();
   const aboutRef = useRef<HTMLDivElement | null>(null);
 
-  useEffect(() => {
-    console.log(aboutRef)
-  }, [aboutRef])
-
   return (
     <Layout fade padding flex footer>
       {/* section */}
       <div>
         <div className="flex flex-row border-b border-gray-300 dark:border-gray-600 pb-6">
-          <div className="w-full flex justify-end text-lg items-center">
+          <div className="w-full flex justify-end text-2xl items-center">
             <div className="cursor-pointer mr-6 hover:text-gray-500"><Link to="/app/home">Explore</Link></div>
             <div className="cursor-pointer mr-6 hover:text-gray-500 flex justify-center">
               <a href="https://github.com/PrawiraGenestonlia/morethandata" target="_blank" rel="noreferrer"><svg className="cursor-pointer fill-current" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><path transform="scale(1.2,1.2)" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg></a>
@@ -46,13 +43,15 @@ const Component = (props: IComponentProps) => {
       {/* section */}
       <div className="relative h-full">
         <div className="w-full h-full absolute t-0 bg-mtd-logo bg-no-repeat bg-right bg-contain bg-opacity-25 opacity-10">&#8203;</div>
-        <div className="mt-6">[TODO-ADD] Cool Visualisation Animation</div>
+        <div className="mt-6">[TODO-ADD] Cool Visualisation Animation
+        
+        </div>
       </div>
 
 
       {/* section */}
       <div className="py-12 ">
-        <div className="max-w-7xl mx-auto lg:px-8">
+        <div className="max-w-9xl mx-auto lg:px-8">
           <div className="lg:text-center">
             <h2 className="text-base text-mtd-300 dark:text-mtd-200 font-semibold tracking-wide uppercase">WHY MORETHANDATA?</h2>
             <p className="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 dark:text-gray-200 sm:text-4xl">
@@ -62,13 +61,13 @@ const Component = (props: IComponentProps) => {
               Data visualisation has been outdated due to business use case. It has always been limited to common charts.
               more<span className="text-mtd-200">than</span>data would like to bring a fresh perspective of what data should look like for non-business use-case.
             </p>
-            <div className="mt-6">[TODO-ADD] Viz Graphics</div>
+            <div className="mt-6"><img className="w-full object-contain max-h-96" alt="data" src={Data} /></div>
           </div>
         </div>
       </div>
 
       {/* section */}
-      <div className="py-12" ref={(ref) => console.log(ref)}>
+      <div className="py-12" ref={aboutRef}>
         <div className="max-w-9xl mx-auto lg:px-8">
           <div className="lg:text-center">
             <h2 className="text-base text-mtd-300 dark:text-mtd-200 font-semibold tracking-wide uppercase">ABOUT ME</h2>
