@@ -7,7 +7,8 @@ module.exports = {
         'body': ['Open Sans', 'sans-serif'],
       },
       colors: {
-        "customNavy": '#282c34',
+        "navy-100": '#282c34',
+        "navy-200": '#232933',
         "mtd-100": '#04ECF6',
         "mtd-200": '#0ECFE2',
         "mtd-300": '#1A88C3',

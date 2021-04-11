@@ -7,6 +7,8 @@ const RouterApp = () => {
   const UserRoutes = () => (
     <Switch>
       <Route exact path="/app/home" component={vizPage.AppHome} />
+      <Route exact path="/app/components" component={vizPage.AppComponent} />
+      <Route exact path="/app/components/:type" component={vizPage.AppComponent} />
       <Route path="/" component={() => <Redirect to="/app/home" />} />
     </Switch>
   )
