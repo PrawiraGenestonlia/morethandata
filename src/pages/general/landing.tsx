@@ -17,7 +17,7 @@ const Component = (props: IComponentProps) => {
   const aboutRef = useRef<HTMLDivElement | null>(null);
 
   return (
-    <Layout fade padding flex>
+    <Layout fade padding flex footer>
       {/* section */}
       <div className="flex flex-row border-b border-gray-300 dark:border-gray-600 pb-6">
         <div className="w-full flex justify-end text-lg items-center">
